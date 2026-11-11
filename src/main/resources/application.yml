@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+rest-client:
+  features:
+    http-1-1: true
+    http-2: true
+    https-tls: true
+    connection-reuse: true
+    connection-pooling: true
+    custom-headers: true
+    request-timeout: true
+    connect-timeout: true
+    proxy-support: true
+    authentication: true
+  http-version: HTTP_2
+  connect-timeout-millis: 5000
+  request-timeout-millis: 10000
+  headers:
+    Accept: application/json
+  proxy:
+    enabled: false
+    host: 127.0.0.1
+    port: 8888
+  authentication:
+    enabled: false
+    username: demo-user
+    password: fake-password-not-a-secret
